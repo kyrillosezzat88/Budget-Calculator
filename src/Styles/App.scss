@@ -1,0 +1,87 @@
+//colors 
+$MainColor:#272727;
+$Formcolor:#effffb;
+$bg-Button:#50d890;
+
+//App Style
+.App{
+    background:$MainColor;
+    height: 100vh;
+    min-height: 100%;
+    h1{
+        color: $Formcolor;
+        text-transform: uppercase;
+        margin:20px 0;
+    }
+    .innerApp{background: $Formcolor;padding: 50px;box-shadow: 0 0 5px 0 $Formcolor;border-radius: 23px;}
+    form{
+        background-color: $Formcolor;
+        .form-group{
+            margin:20px;
+            input{
+                width: 300px;
+                border:none;
+                background-color: transparent;
+                border-bottom: 1px solid $bg-Button;
+                outline: none;
+                transition: all .5s ease-in-out;
+                &:focus{
+                    border-bottom: 1px solid $MainColor;
+                    transition: all .5s ease-in-out;
+                }
+            }
+        }
+        input[type=submit]{
+            background: $bg-Button;
+            color:$Formcolor;
+            border:none;
+            padding: 5px 20px;
+            transition: all .5s ease-in-out;
+            &:hover{
+                background: $MainColor;
+                transition: all .5s ease-in-out;
+            }
+        }
+    }
+    .budgetlist{
+        background: #fff;
+        margin:20px 0;
+        padding: 10px 20px;
+        transition: all .4s ease-in-out;
+        border:1px solid #eee;
+        &:hover{
+            box-shadow:  0 0 3px 0px $MainColor;
+            transition: all .4s ease-in-out;
+        }
+        span{
+            font-size:1em;
+        }
+        i{
+            margin:0 5px;
+            color:$bg-Button;
+            cursor: pointer;
+        }
+        input{
+            width: 300px;
+            border:none;
+            background-color: transparent;
+            border-bottom: 1px solid $bg-Button;
+            outline: none;
+            transition: all .5s ease-in-out;
+            &:focus{
+                border-bottom: 1px solid $MainColor;
+                transition: all .5s ease-in-out;
+            }
+        }
+    }
+    .total{
+        background:$bg-Button;
+        color:$Formcolor;
+        padding: 15px 0px;
+    }
+    .noitem{
+        font-size: 23px;
+        font-weight: bold;
+        margin:20px 0;
+    }
+}

@@ -1,0 +1,113 @@
+.App {
+  background: #272727;
+  height: 100vh;
+  min-height: 100%;
+}
+
+.App h1 {
+  color: #effffb;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.App .innerApp {
+  background: #effffb;
+  padding: 50px;
+  -webkit-box-shadow: 0 0 5px 0 #effffb;
+          box-shadow: 0 0 5px 0 #effffb;
+  border-radius: 23px;
+}
+
+.App form {
+  background-color: #effffb;
+}
+
+.App form .form-group {
+  margin: 20px;
+}
+
+.App form .form-group input {
+  width: 300px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #50d890;
+  outline: none;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.App form .form-group input:focus {
+  border-bottom: 1px solid #272727;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.App form input[type=submit] {
+  background: #50d890;
+  color: #effffb;
+  border: none;
+  padding: 5px 20px;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.App form input[type=submit]:hover {
+  background: #272727;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.App .budgetlist {
+  background: #fff;
+  margin: 20px 0;
+  padding: 10px 20px;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  border: 1px solid #eee;
+}
+
+.App .budgetlist:hover {
+  -webkit-box-shadow: 0 0 3px 0px #272727;
+          box-shadow: 0 0 3px 0px #272727;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.App .budgetlist span {
+  font-size: 1em;
+}
+
+.App .budgetlist i {
+  margin: 0 5px;
+  color: #50d890;
+  cursor: pointer;
+}
+
+.App .budgetlist input {
+  width: 300px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #50d890;
+  outline: none;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.App .budgetlist input:focus {
+  border-bottom: 1px solid #272727;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.App .total {
+  background: #50d890;
+  color: #effffb;
+  padding: 15px 0px;
+}
+
+.App .noitem {
+  font-size: 23px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+/*# sourceMappingURL=App.css.map */
