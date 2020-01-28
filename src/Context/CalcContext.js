@@ -49,6 +49,16 @@ const CalcContextProvider = (props) =>{
         SetTotal(Total);
     },[ items , FEdit]);
 
+    //LocalStorage Functions
+    useEffect(()=>{
+        const localData = localStorage.getItem('items');
+        if(localData){
+            setitem(JSON.parse(localData))
+        }
+    },[ ])
+    useEffect(()=>{
+        localStorage.setItem('items' , JSON.stringify(items));
+    })
     return(
         <CalcContext.Provider  value={{items , HandelAmount,HandelCharge , HandelSubmit ,DeleteItem,EditItem,FEdit,TotalAmount , charge , Amount}}>
             {props.children}
